@@ -1,0 +1,16 @@
+section#hero {
+  --bs-bg-opacity: 0.7;
+
+  .hero-bg {
+    background: url("../assets/hero.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .container-fluid > .row > .col-md-7 {
+    button.btn {
+      display: inline;
+    }
+  }
+}
