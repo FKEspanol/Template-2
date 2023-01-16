@@ -3,6 +3,10 @@
 .section-header {
   line-height: 1.8;
 
+  h2 {
+    text-transform: uppercase;
+  }
+
   h2::after {
     content: "";
     display: block;
