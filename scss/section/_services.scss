@@ -1,7 +1,7 @@
 @import "../variables";
+
 ._services-card {
   transition: 200ms ease-in;
-
   &:hover {
     transform: translateY(-10px);
     box-shadow: $shadow;
