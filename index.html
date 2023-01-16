@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
     <title>Bootstrap 5</title>
   </head>
   <body>
@@ -12,30 +13,29 @@
       <div class="container">
         <div class="row justify-content-center">
           <div
-            class="nav-content col-md-12 d-flex justify-content-between align-items-center"
+            class="nav-content col d-flex justify-content-between align-items-center"
           >
             <h2 class="logo fw-bold">
               <a href="#" class="text-decoration-none text-light">Branding</a>
             </h2>
             <div
-              class="d-flex align-items-center justify-content-between gap-5"
+              class="align-items-center justify-content-between gap-4 d-none d-lg-flex"
             >
               <a href="#" class="nav-link">Home</a>
               <a href="#" class="nav-link">About</a>
-
               <a href="#" class="nav-link">Services </a>
-
               <a href="#" class="nav-link">Projects</a>
-
               <a href="#" class="nav-link">Pricing</a>
               <a href="#" class="nav-link">Contact</a>
             </div>
-            <button class="btn btn-success px-4 pb-2">Get Started</button>
+            <button class="btn btn-success px-4 pb-2 d-none d-lg-flex">
+              Get Started
+            </button>
+            <i class="fab fa-facebook d-lg-none"></i>
           </div>
         </div>
       </div>
     </header>
-
     <!--------------Hero section------------------------>
 
     <section id="hero" class="position-relative bg-dark vh-100">
@@ -67,8 +67,8 @@
     <!--------------About section------------------------>
     <section id="about" class="bg-light">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-12">
+        <div class="row justify-content-center mb-4">
+          <div class="col">
             <div class="section-header">
               <h2 class="fw-bold text-dark">About Us</h2>
               <p class="mb-4">
@@ -82,7 +82,65 @@
             </div>
           </div>
         </div>
+        <div class="row justify-content-center gx-4">
+          <div class="col-lg-5">
+            <img src="./assets/about-img.jpg" alt="" class="w-100" />
+          </div>
+          <div class="col-lg-7">
+            <p class="mt-5 mt-lg-0">
+              <em
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                odio aut ex quod quam accusantium laborum quibusdam quaerat,
+                culpa harum esse minima dolor soluta possimus molestias sapiente
+                dolorum animi cupiditate nobis magni inventore cumque, beatae
+                consequatur.</em
+              >
+            </p>
+            <hr />
+            <br />
+            <div class="group ms-4 mb-4">
+              <h5 class="fw-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+                vero?
+              </h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt alias ipsam magni. Id temporibus, repellat ab expedita,
+                a reprehenderit quaerat. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quam, voluptates!
+              </p>
+              <button class="btn btn-success px-4 mb-2">Lean More</button>
+            </div>
+            <div class="group ms-4 mb-4">
+              <h5 class="fw-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+                vero?
+              </h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt alias ipsam magni. Id temporibus, repellat ab expedita,
+                a reprehenderit quaerat. Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <button class="btn btn-success px-4 mb-2">Lean More</button>
+            </div>
+            <div class="group ms-4 mb-4">
+              <h5 class="fw-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+                vero?
+              </h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt alias ipsam magni. Id temporibus, repellat ab expedita,
+                a reprehenderit quaerat. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Officiis praesentium eveniet obcaecati?
+              </p>
+              <button class="btn btn-success px-4 mb-2">Lean More</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <script src=""></script>
   </body>
 </html>

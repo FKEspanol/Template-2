@@ -10971,4 +10971,13 @@ section#hero .hero-bg {
 
 section#hero .container-fluid > .row > .col-md-7 button.btn, section#hero .container-sm > .row > .col-md-7 button.btn, section#hero .container-md > .row > .col-md-7 button.btn, section#hero .container-lg > .row > .col-md-7 button.btn, section#hero .container-xl > .row > .col-md-7 button.btn, section#hero .container-xxl > .row > .col-md-7 button.btn {
   display: inline;
+}
+
+section#about .container .row > .col-md-7 p > em {
+  font-size: 1.1rem;
+  color: #777777;
+}
+
+section#about .container .row > .col-md-7 .group h5, section#about .container .row > .col-md-7 .group .h5 {
+  color: #454545;
 }/*# sourceMappingURL=style.css.map */
