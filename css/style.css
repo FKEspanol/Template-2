@@ -10954,30 +10954,39 @@ section {
   color: #777777;
 }
 
+._smoke {
+  color: #777777;
+}
+
+.active {
+  background-color: #198754;
+  transition: 1000ms;
+}
+
 header#header {
   z-index: 1;
 }
 
-section#hero {
+section._hero {
   --bs-bg-opacity: 0.7;
 }
 
-section#hero .hero-bg {
+section._hero .hero-bg {
   background: url("../assets/hero.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   z-index: -1;
 }
 
-section#hero .container-fluid > .row > .col-md-7 button.btn, section#hero .container-sm > .row > .col-md-7 button.btn, section#hero .container-md > .row > .col-md-7 button.btn, section#hero .container-lg > .row > .col-md-7 button.btn, section#hero .container-xl > .row > .col-md-7 button.btn, section#hero .container-xxl > .row > .col-md-7 button.btn {
+section._hero .container-fluid > .row > .col-md-7 button.btn, section._hero .container-sm > .row > .col-md-7 button.btn, section._hero .container-md > .row > .col-md-7 button.btn, section._hero .container-lg > .row > .col-md-7 button.btn, section._hero .container-xl > .row > .col-md-7 button.btn, section._hero .container-xxl > .row > .col-md-7 button.btn {
   display: inline;
 }
 
-section#about .container .row > .col-md-7 p > em {
-  font-size: 1.1rem;
-  color: #777777;
+._services-card {
+  transition: 200ms ease-in;
 }
 
-section#about .container .row > .col-md-7 .group h5, section#about .container .row > .col-md-7 .group .h5 {
-  color: #454545;
+._services-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }/*# sourceMappingURL=style.css.map */

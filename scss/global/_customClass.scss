@@ -16,3 +16,12 @@
     color: #777777;
   }
 }
+
+._smoke {
+  color: #777777;
+}
+
+.active {
+  background-color: $success;
+  transition: 1000ms;
+}
