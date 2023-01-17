@@ -8,6 +8,9 @@
         ._pricing-card-pro {
           background: linear-gradient(to bottom right, #14613d, #24a96b);
           .card-body {
+            p.text-start {
+              line-height: 1.8;
+            }
             ul {
               li {
                 list-style: none;
@@ -27,6 +30,9 @@
         .card._pricing-card-starter,
         .card._pricing-card-ultimate {
           .card-body {
+            p.text-start {
+              line-height: 1.8;
+            }
             p {
               color: #777777;
             }

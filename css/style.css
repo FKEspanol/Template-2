@@ -10933,6 +10933,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "AkzidenzGrotesk";
+  src: url("assets/fonts/Akzidenz-grotesk-light.ttf") format("truetype");
+}
+body {
+  font-family: "AkzidenzGrotesk", sans-serif;
+}
+
 section {
   padding: 80px 0;
 }
@@ -10988,7 +10996,7 @@ section._hero {
 }
 
 section._hero .hero-bg {
-  background: url("../assets/hero.jpg") no-repeat;
+  background: url("../assets/images/hero.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   z-index: -1;
@@ -10996,6 +11004,14 @@ section._hero .hero-bg {
 
 section._hero .container-fluid > .row > .col-md-7 button.btn, section._hero .container-sm > .row > .col-md-7 button.btn, section._hero .container-md > .row > .col-md-7 button.btn, section._hero .container-lg > .row > .col-md-7 button.btn, section._hero .container-xl > .row > .col-md-7 button.btn, section._hero .container-xxl > .row > .col-md-7 button.btn {
   display: inline;
+}
+
+@font-face {
+  font-family: "AkzidenzGrotesk";
+  src: url("assets/fonts/Akzidenz-grotesk-light.ttf") format("truetype");
+}
+body {
+  font-family: "AkzidenzGrotesk", sans-serif;
 }
 
 section {
@@ -11065,6 +11081,10 @@ section {
   background: linear-gradient(to bottom right, #14613d, #24a96b);
 }
 
+#pricing .container .row .col-xl-4.col-md-6 ._pricing-card-pro .card-body p.text-start {
+  line-height: 1.8;
+}
+
 #pricing .container .row .col-xl-4.col-md-6 ._pricing-card-pro .card-body ul li {
   list-style: none;
 }
@@ -11075,6 +11095,11 @@ section {
   color: #ffffff;
   margin-right: 10px;
   font-weight: 600;
+}
+
+#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-starter .card-body p.text-start,
+#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-ultimate .card-body p.text-start {
+  line-height: 1.8;
 }
 
 #pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-starter .card-body p,
