@@ -10934,11 +10934,11 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: "AkzidenzGrotesk";
+  font-family: "Akzidenz-Grotesk-Light";
   src: url("assets/fonts/Akzidenz-grotesk-light.ttf") format("truetype");
 }
 body {
-  font-family: "AkzidenzGrotesk", sans-serif;
+  font-family: "Akzidenz-Grotesk-Light", sans-serif;
 }
 
 section {
@@ -10952,6 +10952,7 @@ section {
 
 .section-header h2, .section-header .h2 {
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .section-header h2::after, .section-header .h2::after {
@@ -10965,7 +10966,6 @@ section {
 
 .section-header p {
   color: #777777;
-  font-style: italic;
 }
 
 ._smoke {
@@ -10983,8 +10983,8 @@ section {
   height: 3px;
   width: 100%;
   background-color: #157347;
-  transition: 100ms;
-  transition-delay: 100ms;
+  transition: 300ms;
+  transition-delay: 5000ms;
 }
 
 header#header {
@@ -11007,11 +11007,11 @@ section._hero .container-fluid > .row > .col-md-7 button.btn, section._hero .con
 }
 
 @font-face {
-  font-family: "AkzidenzGrotesk";
+  font-family: "Akzidenz-Grotesk-Light";
   src: url("assets/fonts/Akzidenz-grotesk-light.ttf") format("truetype");
 }
 body {
-  font-family: "AkzidenzGrotesk", sans-serif;
+  font-family: "Akzidenz-Grotesk-Light", sans-serif;
 }
 
 section {
@@ -11025,6 +11025,7 @@ section {
 
 .section-header h2, .section-header .h2 {
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .section-header h2::after, .section-header .h2::after {
@@ -11038,7 +11039,6 @@ section {
 
 .section-header p {
   color: #777777;
-  font-style: italic;
 }
 
 ._smoke {
@@ -11056,8 +11056,8 @@ section {
   height: 3px;
   width: 100%;
   background-color: #157347;
-  transition: 100ms;
-  transition-delay: 100ms;
+  transition: 300ms;
+  transition-delay: 5000ms;
 }
 
 #services .container .row .card-container ._services-card {

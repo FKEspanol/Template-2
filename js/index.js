@@ -15,7 +15,7 @@ const filter_btns = [all_imgs, web_btn, card_btn, app_btn];
 const default_filter = all_imgs;
 
 filter_btns.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
+  btn.addEventListener("click", function (e) {
     if (btn.id === "filter-all") {
       [...item_card, ...item_web, ...item_app].forEach(
         (item) => (item.style.display = "block")

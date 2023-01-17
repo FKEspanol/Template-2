@@ -5,6 +5,7 @@
   margin-bottom: 2rem;
   h2 {
     text-transform: uppercase;
+    margin-bottom: 1rem;
   }
 
   h2::after {
@@ -18,7 +19,6 @@
 
   p {
     color: #777777;
-    font-style: italic;
   }
 }
 
@@ -35,7 +35,7 @@
     height: 3px;
     width: 100%;
     background-color: $success;
-    transition: 100ms;
-    transition-delay: 100ms;
+    transition: 300ms;
+    transition-delay: 5000ms;
   }
 }
