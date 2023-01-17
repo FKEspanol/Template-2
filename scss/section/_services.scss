@@ -1,9 +1,20 @@
-@import "../variables";
-
-._services-card {
-  transition: 200ms ease-in;
-  &:hover {
-    transform: translateY(-10px);
-    box-shadow: $shadow;
+@use "../global/index" as *;
+#services {
+  .container {
+    .row {
+      .card-container {
+        ._services-card {
+          transition-property: all;
+          transition-duration: 0.3s;
+          transition-timing-function: ease;
+          transition-delay: 0s;
+          border: 1px #e1e1e1 solid;
+          &:hover {
+            transform: translateY(-10px);
+            box-shadow: $shadow;
+          }
+        }
+      }
+    }
   }
 }

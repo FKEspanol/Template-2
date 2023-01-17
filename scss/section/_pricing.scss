@@ -1,0 +1,52 @@
+@use "../global/index" as *;
+
+#pricing {
+  background-color: #f9f9f9;
+  .container {
+    .row {
+      .col-xl-4.col-md-6 {
+        ._pricing-card-pro {
+          background: linear-gradient(to bottom right, #14613d, #24a96b);
+          .card-body {
+            ul {
+              li {
+                list-style: none;
+
+                &::before {
+                  content: "\2713";
+                  display: inline-block;
+                  color: #ffffff;
+                  margin-right: 10px;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+
+        .card._pricing-card-starter,
+        .card._pricing-card-ultimate {
+          .card-body {
+            p {
+              color: #777777;
+            }
+            ul {
+              li {
+                list-style: none;
+                color: #777777;
+
+                &::before {
+                  content: "\2713";
+                  display: inline-block;
+                  color: #24a96b;
+                  margin-right: 10px;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

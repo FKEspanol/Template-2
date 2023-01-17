@@ -15,7 +15,7 @@
     <title>Bootstrap 5</title>
   </head>
   <body>
-    <header id="header" class="text-bg-dark fixed-top">
+    <header id="header" class="text-bg-dark fixed-top py-3">
       <div class="container">
         <div class="row justify-content-center">
           <div
@@ -26,29 +26,19 @@
             </h2>
             <div
               id="nav-link-area"
-              class="align-items-center justify-content-between d-none d-lg-flex"
+              class="align-items-center justify-content-between d-none d-lg-flex gap-4"
             >
-              <a href="#hero" class="nav-link py-4 px-3 d-inline-block">Home</a>
-              <a href="#about" class="nav-link py-4 px-3 d-inline-block"
-                >About</a
-              >
-              <a href="#services" class="nav-link py-4 px-3 d-inline-block"
-                >Services
-              </a>
-              <a href="#portfolio" class="nav-link py-4 px-3 d-inline-block"
-                >Portfolio</a
-              >
-              <a href="#pricing" class="nav-link py-4 px-3 d-inline-block"
-                >Pricing</a
-              >
-              <a href="#contact" class="nav-link py-4 px-3 d-inline-block"
-                >Contact</a
-              >
+              <a href="#home" class="nav-link d-inline-block">Home</a>
+              <a href="#about" class="nav-link d-inline-block">About</a>
+              <a href="#services" class="nav-link d-inline-block">Services </a>
+              <a href="#portfolio" class="nav-link d-inline-block">Portfolio</a>
+              <a href="#pricing" class="nav-link d-inline-block">Pricing</a>
+              <a href="#contact" class="nav-link d-inline-block">Contact</a>
             </div>
             <button class="btn btn-success px-4 pb-2 d-none d-lg-flex">
               Get Started
             </button>
-            <i class="fab fa-facebook d-lg-none"></i>
+            <i class="fas fa-bars d-lg-none"></i>
           </div>
         </div>
       </div>
@@ -57,7 +47,7 @@
     <!--------------Main------------------------>
     <main data-bs-spy="scroll" data-bs-target="#nav-link-area">
       <!--------------Hero section------------------------>
-      <section id="hero" class="_hero position-relative bg-dark vh-100">
+      <section id="home" class="_hero position-relative bg-dark vh-100">
         <div
           class="hero-bg position-absolute top-0 end-0 bottom-0 start-0"
         ></div>
@@ -166,8 +156,8 @@
           </div>
           <br />
           <div class="row gy-4">
-            <div class="col-lg-4 col-md-6">
-              <div class="card py-3 px-3 text-center _services-card">
+            <div class="col-lg-4 col-md-6 card-container">
+              <div class="card py-3 px-3 text-center _services-card card-1">
                 <div class="card-body">
                   <i class="fa-solid fa-rocket text-success fs-1 lh-lg"></i>
                   <h4 class="card-title fw-semibold">Technology</h4>
@@ -180,8 +170,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card py-3 px-3 text-center _services-card">
+            <div class="col-lg-4 col-md-6 card-container">
+              <div class="card py-3 px-3 text-center _services-card card-2">
                 <div class="card-body">
                   <i
                     class="fa-solid fa-paint-brush text-success fs-1 lh-lg"
@@ -196,8 +186,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card py-3 px-3 text-center _services-card">
+            <div class="col-lg-4 col-md-6 card-container">
+              <div class="card py-3 px-3 text-center _services-card card-3">
                 <div class="card-body">
                   <i
                     class="fa-solid fa-user-shield text-success fs-1 lh-lg"
@@ -212,11 +202,8 @@
                 </div>
               </div>
             </div>
-            <div class="row gy-4"></div>
-          </div>
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6">
-              <div class="card py-3 px-3 text-center _services-card">
+            <div class="col-lg-4 col-md-6 card-container">
+              <div class="card py-3 px-3 text-center _services-card card-4">
                 <div class="card-body">
                   <i
                     class="fa-solid fa-people-group text-success fs-1 lh-lg"
@@ -231,8 +218,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card py-3 px-3 text-center _services-card">
+            <div class="col-lg-4 col-md-6 card-container">
+              <div class="card py-3 px-3 text-center _services-card card-5">
                 <div class="card-body">
                   <i
                     class="fa-solid fa-image-portrait text-success fs-1 lh-lg"
@@ -247,8 +234,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card py-3 px-3 text-center _services-card">
+            <div class="col-lg-4 col-md-6 card-container">
+              <div class="card py-3 px-3 text-center _services-card card-6">
                 <div class="card-body">
                   <i class="fa-solid fa-hand text-success fs-1 lh-lg"></i>
                   <h4 class="card-title fw-semibold">Expertise</h4>
@@ -270,7 +257,7 @@
       <section id="portfolio" class="portfolio">
         <div class="container">
           <div class="section-header">
-            <h2>Portfolio</h2>
+            <h2 class="fw-bold">Portfolio</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repudiandae, minima!
@@ -294,6 +281,7 @@
           </div>
 
           <div id="_portfolio-items" class="row g-4">
+            <!------------1 - 3 ------->
             <div class="col-lg-4 col-md-6 portfolio _item-app">
               <img src="assets/portfolio-img-1.jpg" class="img-fluid" alt="" />
             </div>
@@ -306,7 +294,7 @@
               <img src="assets/portfolio-img-3.jpg" class="img-fluid" alt="" />
             </div>
 
-            <!------4 - 6--->
+            <!------4 - 6------------->
             <div class="col-lg-4 col-md-6 portfolio _item-card">
               <img src="assets/portfolio-img-4.jpg" class="img-fluid" alt="" />
             </div>
@@ -317,7 +305,7 @@
               <img src="assets/portfolio-img-6.jpg" class="img-fluid" alt="" />
             </div>
 
-            <!---------7 - 9-->
+            <!---------7 - 9--------->
             <div class="col-lg-4 col-md-6 portfolio _item-web">
               <img src="assets/portfolio-img-7.jpg" class="img-fluid" alt="" />
             </div>
@@ -326,6 +314,106 @@
             </div>
             <div class="col-lg-4 col-md-6 portfolio _item-card">
               <img src="assets/portfolio-img-9.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------Pricing Section-------------------->
+
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="fw-bold">Pricing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod
+              quas, commodi libero placeat aperiam. Omnis sed nemo voluptatum
+              nihil?
+            </p>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-xl-4 col-md-6">
+              <div
+                class="card py-5 px-3 mb-4 rounded-3 text-center border-0 shadow-lg _pricing-card-starter"
+              >
+                <div class="card-body">
+                  <h4 class="card-title fw-semibold fs-3 text-success">
+                    STARTER
+                  </h4>
+                  <p class="fs-2">$0 / Month</p>
+                  <p class="text-start">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Consectetur praesentium at laudantium quos maxime
+                    dignissimos.
+                  </p>
+                  <ul class="lh-lg text-start m-auto">
+                    <li>Use in personal projects</li>
+                    <li>Number of websites/domains</li>
+                  </ul>
+                  <br />
+                  <button class="btn pb-2 btn-success rounded-pill px-4">
+                    Select Plan
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div
+                class="card py-5 px-3 mb-4 rounded-3 text-center text-light border-0 shadow-lg _pricing-card-pro"
+              >
+                <div class="card-body">
+                  <h4 class="card-title fw-semibold fs-3">PRO</h4>
+                  <p class="fs-2">$11.50 / Month</p>
+                  <p class="text-start">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Consectetur praesentium at laudantium quos maxime
+                    dignissimos molestiae.
+                  </p>
+                  <ul class="lh-lg text-start m-auto">
+                    <li>Use in personal projects</li>
+                    <li>Number of websites/domains</li>
+                    <li>Create websites for clients</li>
+                    <li>Remove footer credit link</li>
+                    <li>Working PHP/AJAX contact form</li>
+                    <li>Premium support via Email</li>
+                    <li>Sass/SCSS Files</li>
+                  </ul>
+                  <br />
+                  <button class="btn pb-2 btn-outline-light rounded-pill px-4">
+                    Select Plan
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div
+                class="card py-5 px-3 mb-4 rounded-3 text-center border-0 shadow-lg _pricing-card-ultimate"
+              >
+                <div class="card-body">
+                  <h4 class="card-title fw-semibold fs-3 text-success">
+                    ULTIMATE
+                  </h4>
+                  <p class="fs-2">$25 / Month</p>
+                  <p class="text-start">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Consectetur praesentium.
+                  </p>
+                  <ul class="lh-lg text-start">
+                    <li>Use in personal projects</li>
+                    <li>Number of websites/domains</li>
+                    <li>Create websites for clients</li>
+                    <li>Remove footer credit link</li>
+                    <li>Working PHP/AJAX contact form</li>
+                    <li>Premium support via Email</li>
+                    <li>Sass/SCSS Files</li>
+                    <li>Access to all our 90 pro templates</li>
+                  </ul>
+                  <br />
+                  <button class="btn pb-2 btn-success rounded-pill px-4">
+                    Select Plan
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
