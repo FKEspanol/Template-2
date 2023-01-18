@@ -11064,6 +11064,31 @@ section {
   transition-delay: 5000ms;
 }
 
+#about .container .row .col-lg-6 > .d-flex > ul._about-ul {
+  line-height: 1.7;
+}
+
+#about .container .row .col-lg-6 > .d-flex > ul._about-ul li {
+  list-style: none;
+}
+
+#about .container .row .col-lg-6 > .d-flex > ul._about-ul li p::before {
+  content: "✓";
+  display: inline-block;
+  color: #0b5ed7;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+#about .container .row .about-img-2 {
+  position: absolute;
+}
+
+@media (max-width: 991px) {
+  #about .container .row .about-img-2 {
+    position: static;
+  }
+}
 #services .container .row .card-container ._services-card {
   transition-property: all;
   transition-duration: 0.3s;
@@ -11078,11 +11103,13 @@ section {
 }
 
 #services .container .row .card-container ._services-card .card-body > .card-text {
+  font-family: sans-serif;
   line-height: 1.7;
   font-size: 15px;
 }
 
 #pricing .container .row .col-xl-4.col-lg-6 ._pricing-card-pro {
+  box-shadow: 0 1rem 3rem rgba(11, 93, 215, 0.678);
   background: linear-gradient(to bottom right, #0b5ed7, #083579);
 }
 

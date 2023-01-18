@@ -1,2 +1,32 @@
+@use "../global/index" as *;
 
+#about {
+  .container {
+    .row {
+      .col-lg-6 > .d-flex > ul._about-ul {
+        line-height: 1.7;
+        li {
+          list-style: none;
 
+          p::before {
+            content: "\2713";
+            display: inline-block;
+            color: $primary;
+            margin-right: 10px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .about-img-2 {
+        position: absolute;
+      }
+
+      @media (max-width: 991px) {
+        .about-img-2 {
+          position: static;
+        }
+      }
+    }
+  }
+}

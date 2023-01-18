@@ -5,6 +5,7 @@
     .row {
       .col-xl-4.col-lg-6 {
         ._pricing-card-pro {
+          box-shadow: 0 1rem 3rem rgba(11, 93, 215, 0.678);
           background: linear-gradient(to bottom right, #0b5ed7, #083579);
           .card-body {
             p.text-start {
