@@ -11077,19 +11077,24 @@ section {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
-#pricing .container .row .col-xl-4.col-md-6 ._pricing-card-pro {
+#services .container .row .card-container ._services-card .card-body > .card-text {
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+#pricing .container .row .col-xl-4.col-lg-6 ._pricing-card-pro {
   background: linear-gradient(to bottom right, #0b5ed7, #083579);
 }
 
-#pricing .container .row .col-xl-4.col-md-6 ._pricing-card-pro .card-body p.text-start {
+#pricing .container .row .col-xl-4.col-lg-6 ._pricing-card-pro .card-body p.text-start {
   line-height: 1.8;
 }
 
-#pricing .container .row .col-xl-4.col-md-6 ._pricing-card-pro .card-body ul li {
+#pricing .container .row .col-xl-4.col-lg-6 ._pricing-card-pro .card-body ul li {
   list-style: none;
 }
 
-#pricing .container .row .col-xl-4.col-md-6 ._pricing-card-pro .card-body ul li::before {
+#pricing .container .row .col-xl-4.col-lg-6 ._pricing-card-pro .card-body ul li::before {
   content: "✓";
   display: inline-block;
   color: #ffffff;
@@ -11097,24 +11102,24 @@ section {
   font-weight: 600;
 }
 
-#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-starter .card-body p.text-start,
-#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-ultimate .card-body p.text-start {
+#pricing .container .row .col-xl-4.col-lg-6 .card._pricing-card-starter .card-body p.text-start,
+#pricing .container .row .col-xl-4.col-lg-6 .card._pricing-card-ultimate .card-body p.text-start {
   line-height: 1.8;
 }
 
-#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-starter .card-body p,
-#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-ultimate .card-body p {
+#pricing .container .row .col-xl-4.col-lg-6 .card._pricing-card-starter .card-body p,
+#pricing .container .row .col-xl-4.col-lg-6 .card._pricing-card-ultimate .card-body p {
   color: #777777;
 }
 
-#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-starter .card-body ul li,
-#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-ultimate .card-body ul li {
+#pricing .container .row .col-xl-4.col-lg-6 .card._pricing-card-starter .card-body ul li,
+#pricing .container .row .col-xl-4.col-lg-6 .card._pricing-card-ultimate .card-body ul li {
   list-style: none;
   color: #777777;
 }
 
-#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-starter .card-body ul li::before,
-#pricing .container .row .col-xl-4.col-md-6 .card._pricing-card-ultimate .card-body ul li::before {
+#pricing .container .row .col-xl-4.col-lg-6 .card._pricing-card-starter .card-body ul li::before,
+#pricing .container .row .col-xl-4.col-lg-6 .card._pricing-card-ultimate .card-body ul li::before {
   content: "✓";
   display: inline-block;
   color: #0b5ed7;

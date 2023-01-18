@@ -13,6 +13,11 @@
             transform: translateY(-10px);
             box-shadow: $shadow;
           }
+
+          .card-body > .card-text {
+            line-height: 1.7;
+            font-size: 15px;
+          }
         }
       }
     }
