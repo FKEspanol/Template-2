@@ -1,18 +1,31 @@
+const selectId = (...sectionIds) => {
+  const el = [...sectionIds].map((i) => document.getElementById(i));
+  if (el.length > 1) return el;
+  return el[0];
+};
+
+const onClick = (el, cb) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    cb();
+  });
+};
+
 //Portfolio image filter
 
 const _portfolio_items = document.getElementById("_portfolio-items");
-
-const app_btn = document.getElementById("filter-app");
-const card_btn = document.getElementById("filter-card");
-const web_btn = document.getElementById("filter-web");
-const all_imgs = document.getElementById("filter-all");
 
 const item_app = document.getElementsByClassName("_item-app");
 const item_card = document.getElementsByClassName("_item-card");
 const item_web = document.getElementsByClassName("_item-web");
 
-const filter_btns = [all_imgs, web_btn, card_btn, app_btn];
-const default_filter = all_imgs;
+const filter_btns = selectId(
+  "filter-app",
+  "filter-card",
+  "filter-web",
+  "filter-all"
+);
+const default_filter = selectId("filter-all");
 
 filter_btns.forEach((btn) => {
   btn.addEventListener("click", function (e) {
@@ -36,5 +49,19 @@ filter_btns.forEach((btn) => {
         (item) => (item.style.display = "none")
       );
     }
+  });
+});
+
+// scroll to an element with a header height
+
+const navLinks = [...document.getElementsByClassName("_section-link")];
+
+navLinks.forEach((el) => {
+  onClick(el, () => {
+    const link_href = el.getAttribute("href").replace("#", "");
+    window.scrollTo({
+      top: selectId(link_href).offsetTop - selectId("header").offsetHeight,
+      behavior: "smooth",
+    });
   });
 });

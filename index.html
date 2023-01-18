@@ -15,7 +15,7 @@
     <title>Bootstrap 5</title>
   </head>
   <body>
-    <header id="header" class="text-bg-dark fixed-top py-3">
+    <header id="header" class="text-bg-dark fixed-top">
       <div class="container">
         <div class="row justify-content-center">
           <div
@@ -28,14 +28,36 @@
               id="nav-link-area"
               class="align-items-center justify-content-between d-none d-lg-flex gap-4"
             >
-              <a href="#home" class="nav-link d-inline-block">Home</a>
-              <a href="#about" class="nav-link d-inline-block">About</a>
-              <a href="#services" class="nav-link d-inline-block">Services </a>
-              <a href="#portfolio" class="nav-link d-inline-block">Portfolio</a>
-              <a href="#pricing" class="nav-link d-inline-block">Pricing</a>
-              <a href="#contact" class="nav-link d-inline-block">Contact</a>
+              <a href="#" class="nav-link d-inline-block py-4">Home</a>
+              <a
+                href="#about"
+                class="nav-link d-inline-block py-4 _section-link"
+                >About</a
+              >
+              <a
+                href="#services"
+                class="nav-link d-inline-block py-4 _section-link"
+                >Services
+              </a>
+              <a
+                href="#portfolio"
+                class="nav-link d-inline-block py-4 _section-link"
+                >Portfolio</a
+              >
+              <a
+                href="#pricing"
+                class="nav-link d-inline-block py-4 _section-link"
+                >Pricing</a
+              >
+              <a
+                href="#contact"
+                class="nav-link d-inline-block py-4 _section-link"
+                >Contact</a
+              >
             </div>
-            <button class="btn btn-success px-4 d-none d-lg-flex">
+            <button
+              class="btn btn-primary px-4 d-none d-lg-flex rounded-pill px-4"
+            >
               Get Started
             </button>
             <i class="fas fa-bars d-lg-none"></i>
@@ -45,7 +67,7 @@
     </header>
 
     <!--------------Main------------------------>
-    <main data-bs-spy="scroll" data-bs-target="#nav-link-area">
+    <main>
       <!--------------Hero section------------------------>
       <section id="home" class="_hero position-relative bg-dark vh-100">
         <div
@@ -63,8 +85,8 @@
                 We are a team of developers making applications for businesses
               </p>
               <div class="hero-buttons">
-                <button class="btn px-4 btn-success me-3">Get Started</button>
-                <button class="btn btn-outline-success text-light px-4">
+                <button class="btn px-4 btn-primary me-3">Get Started</button>
+                <button class="btn btn-outline-primary text-light px-4">
                   Register
                 </button>
               </div>
@@ -74,12 +96,12 @@
       </section>
 
       <!--------------About section------------------------>
-      <section id="about" class="bg-light">
+      <section id="about">
         <div class="container">
           <div class="row justify-content-center mb-4">
             <div class="col">
               <div class="section-header">
-                <h2 class="fw-bold text-dark">About Us</h2>
+                <h2>About Us</h2>
                 <p class="mb-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
                   laboriosam ullam quas quibusdam nulla sapiente pariatur! Nam
@@ -87,7 +109,6 @@
                   tempore vero iure amet sint, sit libero animi expedita modi
                   nesciunt repellendus .
                 </p>
-                <hr class="bg-success" />
               </div>
             </div>
           </div>
@@ -111,34 +132,43 @@
               <hr />
               <div class="group ms-lg-4 mb-4">
                 <p class="_smoke">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate nobis sit amet consectetur adipisicing elit.
                   Incidunt alias ipsam magni. Id temporibus, repellat ab
                   expedita, a reprehenderit quaerat. Lorem ipsum dolor sit amet
                   consectetur adipisicing elit. Quam, voluptates!
                 </p>
 
-                <button class="btn btn-success px-4">Lean More</button>
+                <button class="btn btn-primary px-4">Lean More</button>
               </div>
               <div class="group ms-lg-4 mb-4">
                 <p class="_smoke">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit quaerat sit amet consectetur adipisicing elit.
                   Incidunt alias ipsam magni. Id temporibus, repellat ab
                   expedita, a reprehenderit quaerat. Lorem ipsum dolor sit amet
                   consectetur.
                 </p>
 
-                <button class="btn btn-success px-4">Lean More</button>
+                <button class="btn btn-primary px-4">Lean More</button>
               </div>
               <div class="group ms-lg-4 mb-4">
                 <p class="_smoke">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Incidunt alias ipsam magni. Id temporibus, repellat ab
-                  expedita, a reprehenderit quaerat. Lorem ipsum dolor, sit amet
-                  consectetur adipisicing elit. Officiis praesentium eveniet
-                  obcaecati?
+                  Id temporibus sit amet consectetur adipisicing elit. Incidunt
+                  alias ipsam magni. Id temporibus, repellat ab expedita, a
+                  reprehenderit quaerat. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Officiis praesentium eveniet obcaecati?
                 </p>
 
-                <button class="btn btn-success px-4">Lean More</button>
+                <button class="btn btn-primary px-4">Lean More</button>
+              </div>
+              <div class="group ms-lg-4 mb-4">
+                <p class="_smoke">
+                  Incidunt alias ipsam adipisicing elit. Incidunt alias ipsam
+                  magni. Id temporibus, repellat ab expedita, a reprehenderit
+                  quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit. Officiis praesentium eveniet obcaecati?
+                </p>
+
+                <button class="btn btn-primary px-4">Lean More</button>
               </div>
             </div>
           </div>
@@ -146,10 +176,10 @@
       </section>
 
       <!---------------Services section--------------------------->
-      <section id="services">
+      <section id="services" class="bg-light">
         <div class="container">
           <div class="section-header">
-            <h2 class="fw-bold text-dark">Services</h2>
+            <h2>Services</h2>
             <p class="mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               explicabo totam rerum. Libero reprehenderit, modi id veritatis
@@ -160,9 +190,11 @@
           <br />
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6 card-container">
-              <div class="card py-3 px-3 text-center _services-card card-1">
+              <div
+                class="card py-3 px-3 text-center _services-card border-0 card-1"
+              >
                 <div class="card-body">
-                  <i class="fa-solid fa-rocket text-success fs-1 lh-lg"></i>
+                  <i class="fa-solid fa-rocket text-primary fs-1 lh-lg"></i>
                   <h4 class="card-title fw-semibold">TECHNOLOGY</h4>
                   <p class="_smoke lh-lg card-text">
                     Appropriately negotiate real-time content vis-a-vis accurate
@@ -175,11 +207,11 @@
             </div>
             <div class="col-lg-4 col-md-6 card-container">
               <div
-                class="card py-3 px-3 text-center _services-card card-2 shadow-lg"
+                class="card py-3 px-3 text-center _services-card border-0 card-2"
               >
                 <div class="card-body">
                   <i
-                    class="fa-solid fa-paint-brush text-success fs-1 lh-lg"
+                    class="fa-solid fa-paint-brush text-primary fs-1 lh-lg"
                   ></i>
                   <h4 class="card-title fw-semibold">DESIGN</h4>
                   <p class="_smoke lh-lg card-text">
@@ -192,10 +224,12 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 card-container">
-              <div class="card py-3 px-3 text-center _services-card card-3">
+              <div
+                class="card py-3 px-3 text-center _services-card border-0 card-3"
+              >
                 <div class="card-body">
                   <i
-                    class="fa-solid fa-user-shield text-success fs-1 lh-lg"
+                    class="fa-solid fa-user-shield text-primary fs-1 lh-lg"
                   ></i>
                   <h4 class="card-title fw-semibold">SECURITY</h4>
                   <p class="_smoke lh-lg card-text">
@@ -209,11 +243,11 @@
             </div>
             <div class="col-lg-4 col-md-6 card-container">
               <div
-                class="card py-3 px-3 text-center _services-card card-4 shadow-lg"
+                class="card py-3 px-3 text-center _services-card border-0 card-4"
               >
                 <div class="card-body">
                   <i
-                    class="fa-solid fa-people-group text-success fs-1 lh-lg"
+                    class="fa-solid fa-people-group text-primary fs-1 lh-lg"
                   ></i>
                   <h4 class="card-title fw-semibold">Community</h4>
                   <p class="_smoke lh-lg card-text">
@@ -226,10 +260,12 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 card-container">
-              <div class="card py-3 px-3 text-center _services-card card-5">
+              <div
+                class="card py-3 px-3 text-center _services-card border-0 card-5"
+              >
                 <div class="card-body">
                   <i
-                    class="fa-solid fa-image-portrait text-success fs-1 lh-lg"
+                    class="fa-solid fa-image-portrait text-primary fs-1 lh-lg"
                   ></i>
                   <h4 class="card-title fw-semibold">VISUAL</h4>
                   <p class="_smoke lh-lg card-text">
@@ -243,10 +279,10 @@
             </div>
             <div class="col-lg-4 col-md-6 card-container">
               <div
-                class="card py-3 px-3 text-center _services-card card-6 shadow-lg"
+                class="card py-3 px-3 text-center _services-card border-0 card-6"
               >
                 <div class="card-body">
-                  <i class="fa-solid fa-hand text-success fs-1 lh-lg"></i>
+                  <i class="fa-solid fa-hand text-primary fs-1 lh-lg"></i>
                   <h4 class="card-title fw-semibold">EXPERTISE</h4>
                   <p class="_smoke lh-lg card-text">
                     Completely maximize world-class ideas whereas magnetic
@@ -266,7 +302,7 @@
       <section id="portfolio" class="portfolio">
         <div class="container">
           <div class="section-header">
-            <h2 class="fw-bold">Portfolio</h2>
+            <h2>Portfolio</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               explicabo totam rerum. Libero reprehenderit, modi id veritatis
@@ -279,15 +315,15 @@
             <div class="col-lg-12 d-flex justify-content-center">
               <div id="portfolio-flters">
                 <button
-                  class="btn btn-success"
+                  class="btn btn-primary"
                   id="filter-all"
                   class="filter-active"
                 >
                   All
                 </button>
-                <button class="btn btn-success" id="filter-app">App</button>
-                <button class="btn btn-success" id="filter-card">Card</button>
-                <button class="btn btn-success" id="filter-web">Web</button>
+                <button class="btn btn-primary" id="filter-app">App</button>
+                <button class="btn btn-primary" id="filter-card">Card</button>
+                <button class="btn btn-primary" id="filter-web">Web</button>
               </div>
             </div>
           </div>
@@ -369,10 +405,10 @@
 
       <!-------------Pricing Section-------------------->
 
-      <section id="pricing" class="pricing">
+      <section id="pricing" class="bg-light">
         <div class="container">
           <div class="section-header">
-            <h2 class="fw-bold">Pricing</h2>
+            <h2>Pricing</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod
               quas, commodi libero placeat aperiam. Omnis sed nemo voluptatum
@@ -385,9 +421,12 @@
                 class="card py-5 px-3 mb-4 rounded-3 border-0 shadow-lg _pricing-card-starter"
               >
                 <div class="card-body">
-                  <h4 class="card-title fw-semibold fs-3 text-success">
+                  <h4
+                    class="card-title fw-semibold fs-3 text-primary d-inline-block"
+                  >
                     STARTER
                   </h4>
+                  <strong class="text-primary">(FREE)</strong>
                   <p class="fs-2">
                     $<strong class="fs-1 fw-bold">0</strong>/<small>mo</small>
                   </p>
@@ -401,7 +440,7 @@
                     <li>Number of websites/domains</li>
                   </ul>
                   <br />
-                  <button class="btn btn-success rounded-pill px-4">
+                  <button class="btn btn-primary rounded-pill px-4">
                     Select Plan
                   </button>
                 </div>
@@ -412,9 +451,10 @@
                 class="card py-5 px-3 mb-4 rounded-3 text-light border-0 shadow-lg _pricing-card-pro"
               >
                 <div class="card-body">
+                  <h4 class="card-title fw-semibold fs-3 d-inline-block">
+                    PRO
+                  </h4>
                   <strong>(Recommended)</strong>
-                  <h4 class="card-title fw-semibold fs-3">PRO</h4>
-
                   <p class="fs-2">
                     $<strong class="fs-1 fw-bold">11.50</strong>/<small
                       >mo</small
@@ -446,7 +486,7 @@
                 class="card py-5 px-3 mb-4 rounded-3 border-0 shadow-lg _pricing-card-ultimate"
               >
                 <div class="card-body">
-                  <h4 class="card-title fw-semibold fs-3 text-success">
+                  <h4 class="card-title fw-semibold fs-3 text-primary">
                     ULTIMATE
                   </h4>
                   <p class="fs-2">
@@ -469,12 +509,41 @@
                     <li>Access to all our 90 pro templates</li>
                   </ul>
                   <br />
-                  <button class="btn btn-success rounded-pill px-4">
+                  <button class="btn btn-primary rounded-pill px-4">
                     Select Plan
                   </button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------Contact Section--------->
+      <section id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact US</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              molestiae nesciunt, enim, optio dolorem corporis maiores totam
+              culpa laboriosam, sed fugiat eaque fugit ad! Nisi eaque autem
+              dicta atque non?
+            </p>
+          </div>
+        </div>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <!--------Just change the src url to your own desired location-------->
+            <iframe
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=3J75+R46,%20City%20Hall%20Dr,%20Poblacion%20District,%20Davao%20City,%20Davao%20del%20Sur&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://fmovies-online.net"></a><br />
           </div>
         </div>
       </section>
