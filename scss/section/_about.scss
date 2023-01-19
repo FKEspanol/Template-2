@@ -3,18 +3,10 @@
 #about {
   .container {
     .row {
-      .col-lg-6 > .d-flex > ul._about-ul {
+      .col-lg-6 > ul._about-ul {
         line-height: 1.7;
         li {
           list-style: none;
-
-          p::before {
-            content: "\2713";
-            display: inline-block;
-            color: $primary;
-            margin-right: 10px;
-            font-weight: 600;
-          }
         }
       }
 

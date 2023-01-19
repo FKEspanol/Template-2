@@ -1,0 +1,49 @@
+@use "../global/index" as *;
+
+footer#footer {
+  padding: 80px 0 50px;
+  .container {
+    .row {
+      .col-lg-3 {
+        ul > li {
+          padding: 0.5rem 0;
+          text-transform: uppercase;
+          font-size: 0.75rem;
+
+          a {
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    article > ._soc-med-icons {
+      a > i.fab {
+        font-size: 0.75rem;
+        text-align: center;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 0.5rem;
+      }
+
+      a:nth-child(1) > i {
+        background-color: #4267b2;
+      }
+      a:nth-child(2) > i {
+        background: linear-gradient(to top right, #fcaf45, #c13584);
+      }
+      a:nth-child(3) > i {
+        background-color: #1da1f2;
+      }
+      a:nth-child(4) > i {
+        background-color: #0077b5;
+      }
+    }
+  }
+}

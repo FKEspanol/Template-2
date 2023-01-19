@@ -1,3 +1,5 @@
+@use "../global/index" as *;
+
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
@@ -5,5 +7,16 @@
   iframe#gmap_canvas {
     width: 100%;
     height: 50vh;
+  }
+}
+
+._form-header {
+  h3::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 50px;
+    margin: 0.5rem auto;
+    background-color: $primary;
   }
 }

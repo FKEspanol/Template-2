@@ -1,6 +1,12 @@
 @use "./variables" as *;
 
-.section-header {
+@mixin beforeList {
+  margin-right: 10px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+._section-header {
   line-height: 1.8;
   margin-bottom: 2rem;
   h2 {
@@ -40,4 +46,47 @@
     transition: 300ms;
     transition-delay: 5000ms;
   }
+}
+
+._lh-1-8 {
+  line-height: 1.8;
+}
+
+._checked-list::before {
+  content: "\2714";
+  color: $primary;
+  @include beforeList;
+}
+
+._checked-list-white {
+  color: $light;
+}
+
+._checked-list-white::before {
+  content: "\2714";
+  color: $light;
+  @include beforeList;
+}
+
+._na-list {
+  text-decoration: line-through;
+}
+
+._na-list::before {
+  content: "\10102";
+  color: $primary;
+  @include beforeList;
+}
+
+._na-list-white {
+  text-decoration: line-through;
+}
+._na-list-white::before {
+  content: "\10102";
+  color: $light;
+  @include beforeList;
+}
+
+._fit-content {
+  width: fit-content;
 }
