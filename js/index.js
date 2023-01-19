@@ -59,9 +59,36 @@ const navLinks = [...document.getElementsByClassName("_section-link")];
 navLinks.forEach((el) => {
   onClick(el, () => {
     const link_href = el.getAttribute("href").replace("#", "");
+    dropdownNavbar.classList.add("d-none");
     window.scrollTo({
       top: selectId(link_href).offsetTop - selectId("header").offsetHeight,
       behavior: "smooth",
     });
   });
+});
+
+//toggle dropdown menu on smaller screen
+const toggleBtn = selectId("navbar-toggler-btn");
+const dropdownNavbar = selectId("dropdown-navbar");
+
+onClick(toggleBtn, () => {
+  dropdownNavbar.classList.toggle("d-none");
+});
+
+//add header background color on scroll
+window.onscroll = () => {
+  if (window.scrollY > 100) {
+    selectId("header").classList.remove("bg-transparent");
+    selectId("header").classList.add("bg-dark");
+  } else {
+    selectId("header").classList.add("bg-transparent");
+    selectId("header").classList.remove("bg-dark");
+  }
+};
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (window.scrollY >= 100) {
+    selectId("header").classList.remove("bg-transparent");
+    selectId("header").classList.add("bg-dark");
+  }
 });

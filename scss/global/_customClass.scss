@@ -35,17 +35,7 @@
 }
 
 .active {
-  position: relative;
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: $primary;
-    transition: 300ms;
-    transition-delay: 5000ms;
-  }
+  background-color: $primary;
 }
 
 ._lh-1-8 {
