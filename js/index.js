@@ -52,16 +52,21 @@ filter_btns.forEach((btn) => {
   });
 });
 
-// scroll to an element with a header height
+let isOpen = false; // state of the dropdown navbar
 
 const navLinks = [...document.getElementsByClassName("_section-link")];
+const dropdownNavbar = selectId("dropdown-navbar");
+const headerContainer = selectId("header-container");
+const dropdownNavbarContainer = selectId("dropdown-navbar-container"); //we will use its height number when opening the dropdown navbar because dropdown navbar height is at css default 0px;
 
-navLinks.forEach((el) => {
-  onClick(el, () => {
-    const link_href = el.getAttribute("href").replace("#", "");
-    dropdownNavbar.classList.add("d-none");
+// scroll to an element below the header
+navLinks.forEach((link) => {
+  onClick(link, () => {
+    const sectionID = link.getAttribute("href").replace("#", ""); //the href attr value of each "link" is the same as the section id value by removing the # symbol
+    dropdownNavbar.style.height = "0px"; //(on smaller screen) hide the dropdown navbar after clicking a link
+    isOpen = false; // set the state of the dropdown navbar to false after clicking a link
     window.scrollTo({
-      top: selectId(link_href).offsetTop - selectId("header").offsetHeight,
+      top: selectId(sectionID).offsetTop - headerContainer.offsetHeight,
       behavior: "smooth",
     });
   });
@@ -69,10 +74,17 @@ navLinks.forEach((el) => {
 
 //toggle dropdown menu on smaller screen
 const toggleBtn = selectId("navbar-toggler-btn");
-const dropdownNavbar = selectId("dropdown-navbar");
-
 onClick(toggleBtn, () => {
-  dropdownNavbar.classList.toggle("d-none");
+  console.log("dshfsdhf");
+  const height = dropdownNavbarContainer.offsetHeight;
+  if (!isOpen) {
+    dropdownNavbar.style.height = `${height}px`;
+    isOpen = true;
+    console.log("hello");
+  } else if (isOpen) {
+    dropdownNavbar.style.height = "0px";
+    isOpen = false;
+  }
 });
 
 //add header background color on scroll
@@ -86,6 +98,7 @@ window.onscroll = () => {
   }
 };
 
+//if the windows reloads or refreshes and the current window.scrollY is greater than 100 set the background to dark because the default background is transparent
 window.addEventListener("DOMContentLoaded", () => {
   if (window.scrollY >= 100) {
     selectId("header").classList.remove("bg-transparent");

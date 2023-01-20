@@ -2,21 +2,28 @@
 header#header {
   z-index: 1;
   transition: 250ms ease-out;
-
-  article#dropdown-navbar {
-    .container > .row > ul > li {
-      transition: 150ms;
-
-      &:hover {
-        background-color: lighten($dark, $amount: 5);
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 576px) {
   header#header {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+}
+
+._hide-dropdown {
+  height: 0px;
+}
+
+article#dropdown-navbar {
+  transition: 500ms;
+  overflow: hidden;
+  height: 0px;
+  .container > .row > ul > li {
+    transition: 200ms;
+
+    &:hover {
+      background-color: lighten($dark, $amount: 5);
+    }
   }
 }
