@@ -16,7 +16,7 @@ header#header {
 }
 
 article#dropdown-navbar {
-  transition: 500ms;
+  transition: 500ms cubic-bezier(1, 0.17, 0.25, 1);
   overflow: hidden;
   height: 0px;
   .container > .row > ul > li {
