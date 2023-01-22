@@ -11154,17 +11154,17 @@ header#header {
   height: 0px;
 }
 
-article#dropdown-navbar {
+#dropdown-navbar {
   transition: 500ms cubic-bezier(1, 0.17, 0.25, 1);
   overflow: hidden;
   height: 0px;
 }
 
-article#dropdown-navbar .container > .row > ul > li {
+#dropdown-navbar .container > .row > ul > li {
   transition: 200ms;
 }
 
-article#dropdown-navbar .container > .row > ul > li:hover {
+#dropdown-navbar .container > .row > ul > li:hover {
   background-color: #2c3237;
 }
 
@@ -11284,7 +11284,7 @@ footer#footer .container .row .col-lg-3 ul > li a:hover {
   text-decoration: underline;
 }
 
-footer#footer .container article > ._soc-med-icons a > i.fab {
+footer#footer .container ._soc-med-icons a > i.fab {
   font-size: 0.75rem;
   text-align: center;
   color: #fff;
@@ -11294,18 +11294,18 @@ footer#footer .container article > ._soc-med-icons a > i.fab {
   margin-right: 0.5rem;
 }
 
-footer#footer .container article > ._soc-med-icons a:nth-child(1) > i {
+footer#footer .container ._soc-med-icons a:nth-child(1) > i {
   background-color: #4267b2;
 }
 
-footer#footer .container article > ._soc-med-icons a:nth-child(2) > i {
+footer#footer .container ._soc-med-icons a:nth-child(2) > i {
   background: linear-gradient(to top right, #fcaf45, #c13584);
 }
 
-footer#footer .container article > ._soc-med-icons a:nth-child(3) > i {
+footer#footer .container ._soc-med-icons a:nth-child(3) > i {
   background-color: #1da1f2;
 }
 
-footer#footer .container article > ._soc-med-icons a:nth-child(4) > i {
+footer#footer .container ._soc-med-icons a:nth-child(4) > i {
   background-color: #0077b5;
 }/*# sourceMappingURL=style.css.map */

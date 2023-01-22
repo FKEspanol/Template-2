@@ -4,6 +4,10 @@ const selectId = (...sectionIds) => {
   return el[0];
 };
 
+const selectClass = (className) => [
+  ...document.getElementsByClassName(className),
+];
+
 const onClick = (el, cb) => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
@@ -15,9 +19,9 @@ const onClick = (el, cb) => {
 
 const _portfolio_items = document.getElementById("_portfolio-items");
 
-const item_app = document.getElementsByClassName("_item-app");
-const item_card = document.getElementsByClassName("_item-card");
-const item_web = document.getElementsByClassName("_item-web");
+const item_app = selectClass("_item-app");
+const item_card = selectClass("_item-card");
+const item_web = selectClass("_item-web");
 
 const filter_btns = selectId(
   "filter-app",
@@ -54,7 +58,7 @@ filter_btns.forEach((btn) => {
 
 let isOpen = false; // state of the dropdown navbar
 
-const navLinks = [...document.getElementsByClassName("_section-link")];
+const navLinks = selectClass("_section-link");
 const dropdownNavbar = selectId("dropdown-navbar");
 const headerContainer = selectId("header-container");
 const dropdownNavbarContainer = selectId("dropdown-navbar-container"); //we will use its height number when opening the dropdown navbar because dropdown navbar height is at css default 0px;
